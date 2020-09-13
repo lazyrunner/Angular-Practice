@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { HeaderComponent } from './shared/component/header/header.component';
 import { FooterComponent } from './shared/component/footer/footer.component';
+import { CountdownTimerComponent } from './component/countdown-timer/countdown-timer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardLayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
