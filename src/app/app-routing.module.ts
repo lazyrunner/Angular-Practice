@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {DashboardLayoutComponent} from './layout/dashboard-layout/dashboard-layout.component';
+import {CountdownTimerComponent} from './component/countdown-timer/countdown-timer.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,14 @@ const routes: Routes = [
     //   path: '',
     //   component: DisclaimerViewComponent
     // }]
+  },
+  {
+    path: 'day2',
+    component: DashboardLayoutComponent,
+    children: [{
+      path: '',
+      component: CountdownTimerComponent
+    }]
   },
   {
     path: '',
