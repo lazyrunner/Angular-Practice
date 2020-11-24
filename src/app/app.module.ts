@@ -8,6 +8,7 @@ import { HeaderComponent } from './shared/component/header/header.component';
 import { FooterComponent } from './shared/component/footer/footer.component';
 import { CountdownTimerComponent } from './component/countdown-timer/countdown-timer.component';
 import { FormsModule } from '@angular/forms';
+import { QuizComponent } from './component/quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     DashboardLayoutComponent,
     HeaderComponent,
     FooterComponent,
-    CountdownTimerComponent
+    CountdownTimerComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
