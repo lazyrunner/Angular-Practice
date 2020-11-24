@@ -21,7 +21,7 @@ export class CountdownTimerComponent implements OnInit {
   days;
   hours;
   min;
-  sec;  
+  sec;
 
   constructor() {}
 
@@ -38,9 +38,8 @@ export class CountdownTimerComponent implements OnInit {
       this.showTimmer = true;
       this.subscribe = this.tick.subscribe(() => {
         this.today = new Date();
-        let currentDiff = this.todate - this.today;
-        console.log("todate",this.todate, "today",this.today,"diff",currentDiff);
-        let seconds = currentDiff / 1000;
+        const currentDiff = this.todate - this.today;
+        const seconds = currentDiff / 1000;
         this.sec = Math.floor(seconds % 60) ;
         this.min = Math.floor((seconds / 60) % 60);
         this.hours = Math.floor((seconds / 3600) % 24);
